@@ -1,0 +1,20 @@
+sudo: true
+dist: trusty
+language: generic
+script:
+  - nvm use stable
+  - nvm install stable
+  - node --version
+  - npm install
+  - npm run init
+  - npm run build
+  - npm run create_dist
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+      - libgnome-keyring-dev
+      - npm
+      - node
