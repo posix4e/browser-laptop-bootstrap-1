@@ -79,6 +79,9 @@
   "homepage": "https://github.com/brave/browser-laptop-bootstrap#readme",
   "dependencies": {
     "commander": "^2.9.0",
-    "fs-extra": "^1.0.0"
+    "follow-redirects": "^1.2.4",
+    "fs-extra": "^1.0.0",
+    "smart-zip": "0.0.9",
+    "underscore": "^1.8.3"
   }
 }
